@@ -6,13 +6,13 @@ public class goblinEncounter {
     private static Scanner scanner = new Scanner(System.in);
     private static dice dice = new dice();
 
-    public static void uglyGoblin() {
+    public static void uglyGoblin(character player) {
         System.out.println("What are you staring at? Do you want a fight?");
         System.out.println("Type 'yes' or 'no'");
     }
 
     public static void goblinFight() {
-        uglyGoblin();
+        uglyGoblin(character.player);
         String response = scanner.nextLine();
 
         if (response.equalsIgnoreCase("yes")) {

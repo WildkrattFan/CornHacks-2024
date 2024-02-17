@@ -11,7 +11,7 @@ public class character {
     public character(String playerName) {
         this.playerName = playerName;
         this.inventory = new ArrayList<>();
-        this.healthBar = 100; // Set initial health
+        this.healthBar = 100;
     }
 
     public String getName() {

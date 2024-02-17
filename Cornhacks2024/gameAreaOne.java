@@ -59,7 +59,7 @@ public class gameAreaOne {
                     System.out.println("You have chosen to head" + direction + ".");
                     System.out.println("You rolled a " + directionRoll + "!");
                     System.out.println("Somehow along the way you get lost and find yourself surrounded by goblins!");
-                    goblinEncounter(player);
+                    goblinEncounter.uglyGoblin(player);
                     // make goblin lair
 
                     // success rolls
@@ -85,7 +85,7 @@ public class gameAreaOne {
                 System.out.println("I don't think you are the right person for the job.");
                 System.out.println("Goodbye.")
                 System.out.println("Good luck in the dragon's lair!");
-                dragonsLair(player);
+                dragonsLair.dragonsLairPlace(player);
             }
             //test
 
@@ -105,7 +105,7 @@ public class gameAreaOne {
                 System.out.println("Wizard: I'm sorry but you don't have a choice " + player.getName() + ".");
                 System.out.println("Wizard: You must accept the quest.");
                 System.out.println("Wizard: I will now teleport you to the South Mountains.");
-                southMountains(player);
+                southMountains.exploreSouthMountains(player);
             }
         } else {
             System.out.println("Wizard: I'm sorry, I didn't catch that. Please type 'yes' or 'no'.");

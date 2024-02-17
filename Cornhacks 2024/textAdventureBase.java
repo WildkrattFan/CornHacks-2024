@@ -5,7 +5,7 @@ public class textAdventureBase {
 
     public static void main(String[] args) {
         // Start the game
-        List<String> inventory = new ArrayList<String>();
+        List<Item> inventory = new ArrayList<>();
         System.out.println("Welcome to the amazing world of Valdoria brave adentureer!");
         System.out.println("You are about to embark on a journey that will test your wits and courage.");
         System.out.println(
@@ -15,7 +15,7 @@ public class textAdventureBase {
         String input = System.console().readLine();
         if (input.equals("yes")) {
             // Play Dice animation
-            if (Dice.rollEasyChoice() >= 4) {
+            if (dice.rollEasyChoice() >= 4) {
                 System.out.println("You have rolled a " + Dice.rollEasyChoice() + " the game will now begin!");
                 System.out.println("Good luck!");
                 gameAeraOne(invintory);
@@ -26,7 +26,7 @@ public class textAdventureBase {
             }
         } else if (input.equals("no")) {
             //Play DIce animation
-            if (Dice.rollEasyChoice() >= 4){
+            if (dice.rollEasyChoice() >= 4){
                 System.out.printkn("You have rolled a " + Dice.rollEasyChoice() + " the game will now end.");
                 System.out.println("Thank you for playing. Goodbye!");
             else {
@@ -39,10 +39,22 @@ public class textAdventureBase {
         } else {
             System.out.println("Invalid input. Please type 'yes' or 'no'.");
         }
+}
+
+    public static void gameAeraOne(List<Item> inventory) {
+        System.out
+                .println("You are standing in a dark forest. You can see a path to the north and a path to the east.");
+        System.out.println("Which way would you like to go?");
+        String input = System.console().readLine();
+        if (input.equals("north")) {
+            System.out.println("You have chosen to go north.");
+            gameAreaTwo(inventory);
+        } else if (input.equals("east")) {
+            System.out.println("You have chosen to go east.");
+            gameAreaThree(inventory);
+        } else {
+            System.out.println("Invalid input. Please type 'north' or 'east'.");
+        }
+
     }
-}
-
-gameAeraOne(){
-
-}
 }

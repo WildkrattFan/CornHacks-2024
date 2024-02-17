@@ -24,13 +24,11 @@ public class Dice {
                 + this.diceDifficulty);
 
     }
-    public static void main(String[] args) {
-        Dice rollEasyChoice = new Dice("Warrior",  6, "Easy");
-        Dice rollMediumChoice = new Dice("Warrior",  3, "Medium");
-        Dice rollHardChoice = new Dice("Warrior",  4, "Hard");
 
+    public void makeDice() {
+        Dice rollEasyChoice = new Dice("Warrior", 6, "Easy");
+        Dice rollMediumChoice = new Dice("Warrior", 3, "Medium");
+        Dice rollHardChoice = new Dice("Warrior", 4, "Hard");
 
     }
-}
-
 }

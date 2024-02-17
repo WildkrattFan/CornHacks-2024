@@ -31,15 +31,17 @@ public class gameAreaOne {
 
         // Accepts the quest
         if (input.equals("yes")) {
+            
 
             // Choice success!
-            if (Dice.rollMediumChoice() >= 5) {
+            dice diceInstance = new dice();
+            if (diceInstance.rollMediumChoice() >= 5) {
 
                 System.out.println("Wizard: Excellent! I knew I could count on you " + player.getName() + ".");
                 System.out.println("Wizard: Here is a map to the cave. Good luck!");
                 System.out.println("Would you like to head to the South or to the East?");
                 String direction = System.console().readLine();
-                int directionRoll = dice.rollMediumChoice();
+                int directionRoll = diceInstance.rollMediumChoice();
 
                 // choice failures
 
@@ -85,7 +87,9 @@ public class gameAreaOne {
 
             // Declines the quest
         } else if (input.equals("no")) {
-            int noAttempt = dice.rollMediumChoice();
+            
+            dice diceInstance = new dice();
+            int noAttempt = diceInstance.rollMediumChoice();
             // Decline quest failure
             if (noAttempt <= 5) {
                 System.out.println("Wizard: I understand. It is a dangerous task.");

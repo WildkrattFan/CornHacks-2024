@@ -18,8 +18,7 @@ public class dragonsLair {
             System.out.println("SORRY WRONG ANSWER!!! \n Lets try that again...");
             readyToDieMessage();
 
-            fld;sfbdan fadjsk fasn fa
-            }
-            
         }
+
+    }
 }

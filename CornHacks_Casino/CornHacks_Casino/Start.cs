@@ -1,7 +1,10 @@
 namespace CornHacks_Casino
 {
+    
     public partial class Start : Form
     {
+        public string name = "";
+
         public Start()
         {
             InitializeComponent();
@@ -19,8 +22,24 @@ namespace CornHacks_Casino
 
         private void pictureBox1_Click_1(object sender, EventArgs e)
         {
-            this.BackColor = Color.LimeGreen;
-            this.TransparencyKey = Color.LimeGreen;
+            
+        }
+
+        private void nameTextBox_TextChanged(object sender, EventArgs e)
+        {
+            if (!nameTextBox.Text.Equals(""))
+            {
+                Next0.Show();
+            }
+            if (nameTextBox.Text.Equals(""))
+            {
+                Next0.Hide();
+            }
+        }
+
+        private void Next0_Click(object sender, EventArgs e)
+        {
+            Dice.Show();
         }
     }
 }

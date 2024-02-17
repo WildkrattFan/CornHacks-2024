@@ -6,7 +6,8 @@ namespace CornHacks_Casino
         Random random = new Random();
         public string name = "";
         public int diceNum;
-        string[] location = new string[] { "Dragons Lair", "South Mountains", "East Village", "Goblin Hut", "Gold Hoard", "South Mountains" };
+        public string[] location = new string[] { "Dragons Lair", "South Mountains", "East Village", "Goblin Hut", "Gold Hoard", "South Mountains" };
+        public int count = 0;
 
 
         public int Random(int max)
@@ -50,28 +51,56 @@ namespace CornHacks_Casino
 
         private void Next0_Click(object sender, EventArgs e)
         {
-            diceNum = Random(6);
-            Dice_Value.Text = diceNum.ToString();
-            Dice_Value.Show();
-            Dice.Show();
-            Next0.Hide();
-            Elf_text1.Hide();
-            bjorkNameBox.Hide();
-            
-            if (diceNum % 2 == 0)
+            count++;
+            if (count == 1)
             {
-                finalName.Text = "You rolled a " + diceNum + "! You get to keep your name!";
+                finalName.Text = "Greetings Traveler!";
+            }
+            if (count == 2)
+            {
+                finalName.Text = "Welcome to my humble Abode!";
+            }
+            if (count == 3)
+            {
+                finalName.Text = "What should I call you?";
+                nameTextBox.Show();
+                Next0.Hide();
+            }
+            if (count == 4)
+            {
+                diceNum = Random(6);
+                Dice_Value.Text = diceNum.ToString();
+                Dice_Value.Show();
+                Dice.Show();
+                nameTextBox.Hide();
+ 
                 name = nameTextBox.Text;
+                if (diceNum % 2 == 0)
+                {
+                    finalName.Text = name + " is a terrible name!\n I will call you WobbleKnob";
+                    name = "Wobbleknob";
+                }
+                else
+                {
+                    finalName.Text = "Nice to meet you, " + name + "!";
+                }
             }
-            else
+            if (count == 5)
             {
-                name = "Wobbleknob";
-                finalName.Text = "You rolled a " + diceNum + "! Your name is Wobbleknob ";
+                finalName.Text = name + ", I have a quest for you.";
             }
-            Next2.Show();
-            Roll_Again.Show();
-            nameTextBox.Hide();
-            finalName.Show();
+            if (count == 6)
+            {
+                finalName.Text = "I need you to travel north to the cave \nof wonders and get the gauntlet of power";
+            }
+            
+            if (count == 7)
+            {
+                finalName.Text = "Are you up for the challenge?";
+                YesBtn.Show();
+                NoBtn.Show();
+                Next0.Hide();
+            }
         }
 
         private void finalName_Click(object sender, EventArgs e)
@@ -81,12 +110,7 @@ namespace CornHacks_Casino
 
         private void Next2_Click(object sender, EventArgs e)
         {
-            diceNum = Random(6);
-            Dice_Value.Text = diceNum.ToString();
-            finalName.Text = "You rolled a " + diceNum + "! Click next to see where you go!";
-            Next2.Hide();
-            Next3.Show();
-            Roll_Again.Hide();
+           
         }
     }
 }

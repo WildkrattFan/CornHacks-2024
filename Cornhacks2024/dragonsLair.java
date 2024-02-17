@@ -1,16 +1,16 @@
 package Cornhacks2024;
 
-import java.util.Scanner;
 import Dice;
 
 public class dragonsLair {
     Dice dice = new Dice();
 
-    public static void magicWizardHand(){
+    public static void magicWizardHand() {
         System.out.println("Congrats you rolled a 16");
         System.out.println("You zap the dragon with your magic wiazrd hands and you kill the Dragon");
-            southMountains(player);     
-    } 
+        southMountains(player);
+    }
+
     public static void runAway(int roll){
         System.out.println("You rolled a " + roll);
         System.out.println("You try run away from the Dragon");
@@ -38,18 +38,22 @@ public class dragonsLair {
                 }
             }
         }
-    public static void fistFight(int roll){
-            System.out.println("You rolled a " + roll);
-            System.out.println("You decide to fist fight the dragon");
-            roll2 = 20;
-            System.out.println("You rolled a " + roll2);
-            System.out.println("You punch the dragon straight in its nose, \n you are then engulfed in a massive flame and die");
-            System.exit(0);  
-        }
-    public static void readyToDieMessage(){
+
+    public static void fistFight(int roll) {
+        System.out.println("You rolled a " + roll);
+        System.out.println("You decide to fist fight the dragon");
+        roll2 = 20;
+        System.out.println("You rolled a " + roll2);
+        System.out.println(
+                "You punch the dragon straight in its nose, \n you are then engulfed in a massive flame and die");
+        System.exit(0);
+    }
+
+    public static void readyToDieMessage() {
         System.out.println("Are you ready to die");
         System.out.println("Type 'yes' or 'no'");
-        } 
+    }
+
     public static void dragonInLair(){
         System.out.println("Dragon in Lair");
         System.out.println("The Dragon sees you how would you like to react");
@@ -64,6 +68,7 @@ public class dragonsLair {
             fistFight()
         }
     }
+
     public static void dragonNotInLair(){
         System.out.println("You entered the Dragon's Lair and there is no dragon, so you leave");
         southMountains(player); 
@@ -88,7 +93,3 @@ public class dragonsLair {
             
         }
     }
-
-
-
-        

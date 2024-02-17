@@ -50,7 +50,7 @@ public class southMountains {
                     System.out.println("You find a cave in the distance.");
                     System.out.println("You feel a sense of wonder and excitement.");
                     System.out.println("You feel as though you could take on the world.");
-                    caveOfWonders(player);
+                    caveOfWonders.crypticCrystals(player);
                 } else {
                     System.out.println("You turn back and leave the mountains.");
                     System.out.println("You feel as though you have missed out on something great.");
@@ -63,7 +63,7 @@ public class southMountains {
                     System.out.println("You find a cave in the distance.");
                     System.out.println("You feel a sense of wonder and excitement.");
                     System.out.println("You feel as though you could take on the world.");
-                    caveOfWonders(player);
+                    caveOfWonders.crypticCrystals(player);
                 } else {
                     System.out.println("You turn back and leave the mountains.");
                     System.out.println("You are suddenly attacked by a group of bandits!");
@@ -134,7 +134,7 @@ public class southMountains {
                 System.out.println("You are able to fight off the bandits and escape.");
                 System.out.println("You leave the mountains and continue on your journey.");
                 System.out.println("Along the way you run into the Cave of Wonders!");
-                caveOfWonders(player);
+                caveOfWonders.crypticCrystals(player);
             } else {
                 System.out.println("You rolled a " + roll);
                 System.out.println("You are quickly overpowered and killed.");

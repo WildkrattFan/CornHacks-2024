@@ -20,7 +20,7 @@ public class textAdventureBase {
             if (dice.rollEasyChoice() <= 4) {
                 System.out.println("You have rolled a " + dice.rollEasyChoice() + " the game will now begin!");
                 System.out.println("Good luck!");
-                gameAreaOne(); 
+                gameAreaOne.gameAeraOne(); 
             } else {
                 System.out.println("You have rolled a " + dice.rollEasyChoice() + ".");
                 System.out.println("You have died. Game over.");
@@ -34,7 +34,7 @@ public class textAdventureBase {
             else {
                 System.out.println("You have rolled a " + dice.rollEasyChoice() + ". The game will now begin!");
                 System.out.println("Womp womp.");
-                gameAreaOne();
+                gameAreaOne.gameAeraOne();
             }
             
             System.exit(0);

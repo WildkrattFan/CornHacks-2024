@@ -73,7 +73,7 @@ public class gameAreaOne {
                     } else if (direction.equals("east")) {
                         System.out.println("You have chosen to head east.");
                         System.out.println("You rolled a " + directionRoll + "!");
-                        eastVillageplayer(player);
+                        eastVillage.eastVillagePlace(player);
                         // make eastVillage
                     } else {
                         System.out.println("I'm sorry, I didn't catch that. Please type 'south' or 'east'.");
@@ -83,7 +83,7 @@ public class gameAreaOne {
             } else {
                 System.out.println("I'm sorry but I've changed my mind " + player.getName() + ".");
                 System.out.println("I don't think you are the right person for the job.");
-                System.out.println("Goodbye.")
+                System.out.println("Goodbye.");
                 System.out.println("Good luck in the dragon's lair!");
                 dragonsLair.dragonsLairPlace(player);
             }

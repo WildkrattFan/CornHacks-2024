@@ -22,7 +22,7 @@ public class goblinEncounter {
             if (diceResult > 10) {
                 System.out.println("You defeated the goblin!");
                 System.out.println("You continue to the east!");
-                eastVillage(player);
+                eastVillage.eastVillagePlace(player);
                 // Handle victory scenario
             } else {
                 System.out.println("The goblin defeated you!");

@@ -81,7 +81,7 @@ public class caveOfWonders {
         return roll >= threshold;
     }
 
-    public static void caveOfWonders() {
+    public static void crypticCrystals(character player) {
         crystalRiddles();
     }
 }

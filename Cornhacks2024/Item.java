@@ -27,11 +27,6 @@ public class Item {
     public String getDescription() {
         return this.description;
     }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public int getValue() {
         return this.value;
     }

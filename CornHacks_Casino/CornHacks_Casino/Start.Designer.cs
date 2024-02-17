@@ -50,7 +50,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(620, 67);
+            this.pictureBox1.Location = new System.Drawing.Point(620, 39);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(379, 493);
             this.pictureBox1.TabIndex = 0;
@@ -212,7 +212,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(984, 531);
+            this.ClientSize = new System.Drawing.Size(984, 469);
             this.Controls.Add(this.Next3);
             this.Controls.Add(this.Roll_Again);
             this.Controls.Add(this.Next2);
@@ -227,8 +227,8 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Margin = new System.Windows.Forms.Padding(2);
-            this.MaximumSize = new System.Drawing.Size(1000, 580);
-            this.MinimumSize = new System.Drawing.Size(1000, 550);
+            this.MaximumSize = new System.Drawing.Size(1000, 508);
+            this.MinimumSize = new System.Drawing.Size(1000, 508);
             this.Name = "Start";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);

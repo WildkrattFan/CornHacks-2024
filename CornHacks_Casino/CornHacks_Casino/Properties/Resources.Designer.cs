@@ -73,6 +73,36 @@ namespace CornHacks_Casino.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap dragon_lair {
+            get {
+                object obj = ResourceManager.GetObject("dragon_lair", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap goblinHut {
+            get {
+                object obj = ResourceManager.GetObject("goblinHut", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap goldYard {
+            get {
+                object obj = ResourceManager.GetObject("goldYard", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap kisspng_final_fantasy_ix_dissidia_final_fantasy_nt_dissidi_peking_opera_characters_5b31201650aaf1_8996581215299461343304 {
             get {
                 object obj = ResourceManager.GetObject("kisspng-final-fantasy-ix-dissidia-final-fantasy-nt-dissidi-peking-opera-character" +
@@ -84,9 +114,29 @@ namespace CornHacks_Casino.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap mountains {
+            get {
+                object obj = ResourceManager.GetObject("mountains", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap start_background {
             get {
                 object obj = ResourceManager.GetObject("start_background", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap village {
+            get {
+                object obj = ResourceManager.GetObject("village", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

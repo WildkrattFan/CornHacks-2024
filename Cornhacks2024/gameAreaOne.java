@@ -51,7 +51,7 @@ public class gameAreaOne {
                     System.out.println("You rolled a " + directionRoll + "!");
                     System.out.println(
                             "Unfortunately along the way you fall through the ground and directly into a DRAGONS LAIR");
-                    dragonsLair(player);
+                    dragonsLair.dragonsLairPlace(player);
                     // TODO: Make dragon's lair
 
                     // goblin's encounter failure

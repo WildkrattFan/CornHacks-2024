@@ -60,7 +60,7 @@ namespace CornHacks_Casino
             
             if (diceNum % 2 == 0)
             {
-                finalName.Text = "You rolled a " + diceNum + "! You get to keep you name!";
+                finalName.Text = "You rolled a " + diceNum + "! You get to keep your name!";
                 name = nameTextBox.Text;
             }
             else
@@ -84,6 +84,9 @@ namespace CornHacks_Casino
             diceNum = Random(6);
             Dice_Value.Text = diceNum.ToString();
             finalName.Text = "You rolled a " + diceNum + "! Click next to see where you go!";
+            Next2.Hide();
+            Next3.Show();
+            Roll_Again.Hide();
         }
     }
 }

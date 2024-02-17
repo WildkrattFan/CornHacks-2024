@@ -67,7 +67,7 @@ public class gameAreaOne {
                     if (direction.equals("south")) {
                         System.out.println("You have chosen to head south.");
                         System.out.println("You rolled a " + directionRoll + "!");
-                        southMountains(player);
+                        southMountains.exploreSouthMountains(player);
                         // make southMountains
 
                     } else if (direction.equals("east")) {

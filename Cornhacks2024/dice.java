@@ -24,5 +24,11 @@ public class Dice {
                 + this.diceDifficulty);
 
     }
+    public static void main(String[] args) {
+        Dice rollMediumChoice = new Dice("Warrior",  3, "Medium");
+        Dice rollHardChoice = new Dice("Warrior",  4, "Hard");
+
+    }
+}
 
 }

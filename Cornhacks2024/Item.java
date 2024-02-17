@@ -27,6 +27,7 @@ public class Item {
     public String getDescription() {
         return this.description;
     }
+
     public int getValue() {
         return this.value;
     }

@@ -7,8 +7,7 @@ public class southMountains {
         System.out.println("It is truely a sight to behold.");
         System.out.println("You feel a sense of adventure and wonder.");
         System.out.println("You feel as though you could take on the world.");
-        dice diceInstance = new dice();
-        int roll = diceInstance.rollMediumChoice();
+        int roll = dice.rollMediumChoice();
 
         if (roll >= 5) {
             System.out.println("You rolled a " + roll);
@@ -30,26 +29,10 @@ public class southMountains {
     public static void rushDownMountain(character player) {
         System.out.println("You sprint down the mountain with the speed of the fastest horses.");
         System.out.println("You feel the wind in your hair and the sun on your face.");
-        System.out.println("You feel alive.");
-        System.out.println("You feel free.");
-        System.out.println("You feel like you could take on the world.");
-
-        dice diceInstance = new dice();
-        int roll = diceInstance.rollMediumChoice();
-        if (roll >= 7) {
-            System.out.println("You rolled a " + roll);
-            System.out.println("You make it down the mountainside safely.");
-        } else {
-            System.out.println("You rolled a " + roll);
-            System.out.println("You trip and fall down the mountainside.");
-            System.out.println("You are injured and cannot continue.");
-            depressed(player);
-        }
     }
 
     public static void depressed(character player) {
-        dice diceInstance = new dice();
-        int roll = diceInstance.rollMediumChoice();
+        int roll = dice.rollMediumChoice();
         System.out.println("You feel a sense of dread and despair.");
         System.out.println("You feel as though you have failed.");
 
@@ -59,8 +42,7 @@ public class southMountains {
             System.out.println("Would you like to try and continue?");
             String input = System.console().readLine();
             if (input.equals("yes")) {
-                dice diceInstance2 = new dice();
-                int roll2 = diceInstance2.rollMediumChoice();
+                int roll2 = dice.rollMediumChoice();
                 if (roll2 >= 7) {
                     System.out.println("You rolled a " + roll2);
                     System.out.println("You feel a sense of determination.");
@@ -68,12 +50,11 @@ public class southMountains {
                     rushDownMountain(player);
                 } else {
                     System.out.println("You rolled a " + roll2);
-                    System.out.println("Your dread continues to escalate and you are unable to conunue");
+                    System.out.println("Your dread continues to escalate and you are unable to continue");
                     System.exit(1);
                 }
             } else {
-                dice diceInstance3 = new dice();
-                int roll3 = diceInstance3.rollMediumChoice();
+                int roll3 = dice.rollMediumChoice();
                 if (roll3 >= 7) {
                     System.out.println("You rolled a " + roll3);
                     System.out.println("You feel a sense of determination.");

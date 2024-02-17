@@ -1,5 +1,7 @@
 package Cornhacks2024;
 
+import java.util.Random;
+
 public class Dice {
     private String diceType;
     private int numSides;
@@ -25,10 +27,20 @@ public class Dice {
 
     }
 
-    public void makeDice() {
-        Dice rollEasyChoice = new Dice("Warrior", 6, "Easy");
-        Dice rollMediumChoice = new Dice("Warrior", 3, "Medium");
-        Dice rollHardChoice = new Dice("Warrior", 4, "Hard");
+    public int rollEasyChoice(String args[]) {
+        Random input = new random(0, 5);
+        return input.nextInt(5);
 
+    }
+
+    @Override
+    public int rollMediumChoice(String args[]) {
+        Random input = new random(0, 10);
+        return input.nextInt(10);
+    }
+
+    public int rollHardChoice(String args[]) {
+        Random input = new random(0, 15);
+        return input.nextInt(15);
     }
 }

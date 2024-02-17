@@ -38,6 +38,8 @@
             this.nameTextBox = new System.Windows.Forms.TextBox();
             this.Next0 = new System.Windows.Forms.Button();
             this.Dice = new System.Windows.Forms.PictureBox();
+            this.Dice_Value = new System.Windows.Forms.Label();
+            this.finalName = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Dice)).BeginInit();
             this.SuspendLayout();
@@ -46,10 +48,9 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(615, 71);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Location = new System.Drawing.Point(478, 57);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(528, 618);
+            this.pictureBox1.Size = new System.Drawing.Size(411, 500);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click_1);
@@ -58,10 +59,9 @@
             // 
             this.next1.BackColor = System.Drawing.SystemColors.Info;
             this.next1.Font = new System.Drawing.Font("SimSun", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.next1.Location = new System.Drawing.Point(915, 595);
-            this.next1.Margin = new System.Windows.Forms.Padding(4);
+            this.next1.Location = new System.Drawing.Point(712, 482);
             this.next1.Name = "next1";
-            this.next1.Size = new System.Drawing.Size(126, 48);
+            this.next1.Size = new System.Drawing.Size(98, 39);
             this.next1.TabIndex = 1;
             this.next1.Text = "NEXT";
             this.next1.UseVisualStyleBackColor = false;
@@ -70,8 +70,9 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(52, 21);
+            this.label1.Size = new System.Drawing.Size(43, 17);
             this.label1.TabIndex = 2;
             this.label1.Text = "label1";
             // 
@@ -80,9 +81,10 @@
             this.Elf_text1.AutoSize = true;
             this.Elf_text1.BackColor = System.Drawing.Color.MistyRose;
             this.Elf_text1.Font = new System.Drawing.Font("SimSun", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Elf_text1.Location = new System.Drawing.Point(271, 48);
+            this.Elf_text1.Location = new System.Drawing.Point(211, 39);
+            this.Elf_text1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Elf_text1.Name = "Elf_text1";
-            this.Elf_text1.Size = new System.Drawing.Size(522, 50);
+            this.Elf_text1.Size = new System.Drawing.Size(417, 40);
             this.Elf_text1.TabIndex = 3;
             this.Elf_text1.Text = "Welcome to Valdoria!";
             // 
@@ -91,9 +93,10 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.MistyRose;
             this.label2.Font = new System.Drawing.Font("SimSun", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(291, 153);
+            this.label2.Location = new System.Drawing.Point(226, 124);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(0, 28);
+            this.label2.Size = new System.Drawing.Size(0, 22);
             this.label2.TabIndex = 4;
             // 
             // bjorkNameBox
@@ -101,18 +104,20 @@
             this.bjorkNameBox.AutoSize = true;
             this.bjorkNameBox.BackColor = System.Drawing.Color.MistyRose;
             this.bjorkNameBox.Font = new System.Drawing.Font("SimSun", 19.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.bjorkNameBox.Location = new System.Drawing.Point(291, 120);
+            this.bjorkNameBox.Location = new System.Drawing.Point(226, 97);
+            this.bjorkNameBox.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.bjorkNameBox.Name = "bjorkNameBox";
-            this.bjorkNameBox.Size = new System.Drawing.Size(479, 33);
+            this.bjorkNameBox.Size = new System.Drawing.Size(389, 26);
             this.bjorkNameBox.TabIndex = 5;
             this.bjorkNameBox.Text = "I\'m Bjork! What is your name?";
             // 
             // nameTextBox
             // 
             this.nameTextBox.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.nameTextBox.Location = new System.Drawing.Point(396, 182);
+            this.nameTextBox.Location = new System.Drawing.Point(312, 147);
+            this.nameTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.nameTextBox.Name = "nameTextBox";
-            this.nameTextBox.Size = new System.Drawing.Size(269, 38);
+            this.nameTextBox.Size = new System.Drawing.Size(210, 32);
             this.nameTextBox.TabIndex = 6;
             this.nameTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.nameTextBox.UseWaitCursor = true;
@@ -122,9 +127,10 @@
             // 
             this.Next0.BackColor = System.Drawing.Color.MistyRose;
             this.Next0.Font = new System.Drawing.Font("SimSun", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Next0.Location = new System.Drawing.Point(474, 254);
+            this.Next0.Location = new System.Drawing.Point(376, 206);
+            this.Next0.Margin = new System.Windows.Forms.Padding(2);
             this.Next0.Name = "Next0";
-            this.Next0.Size = new System.Drawing.Size(116, 47);
+            this.Next0.Size = new System.Drawing.Size(90, 38);
             this.Next0.TabIndex = 7;
             this.Next0.Text = "Next";
             this.Next0.UseVisualStyleBackColor = false;
@@ -135,20 +141,49 @@
             // 
             this.Dice.BackColor = System.Drawing.Color.Transparent;
             this.Dice.Image = global::CornHacks_Casino.Properties.Resources.dice;
-            this.Dice.Location = new System.Drawing.Point(491, 327);
+            this.Dice.Location = new System.Drawing.Point(382, 265);
+            this.Dice.Margin = new System.Windows.Forms.Padding(2);
             this.Dice.Name = "Dice";
-            this.Dice.Size = new System.Drawing.Size(174, 154);
+            this.Dice.Size = new System.Drawing.Size(135, 125);
             this.Dice.TabIndex = 8;
             this.Dice.TabStop = false;
             this.Dice.Visible = false;
             // 
+            // Dice_Value
+            // 
+            this.Dice_Value.AutoSize = true;
+            this.Dice_Value.Font = new System.Drawing.Font("SimSun", 32.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Dice_Value.Location = new System.Drawing.Point(394, 276);
+            this.Dice_Value.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Dice_Value.Name = "Dice_Value";
+            this.Dice_Value.Size = new System.Drawing.Size(41, 43);
+            this.Dice_Value.TabIndex = 9;
+            this.Dice_Value.Text = "3";
+            this.Dice_Value.Visible = false;
+            // 
+            // finalName
+            // 
+            this.finalName.AutoSize = true;
+            this.finalName.BackColor = System.Drawing.Color.MistyRose;
+            this.finalName.Font = new System.Drawing.Font("SimSun", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.finalName.Location = new System.Drawing.Point(143, 217);
+            this.finalName.Name = "finalName";
+            this.finalName.Size = new System.Drawing.Size(68, 27);
+            this.finalName.TabIndex = 10;
+            this.finalName.Text = "text";
+            this.finalName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.finalName.Visible = false;
+            this.finalName.Click += new System.EventHandler(this.finalName_Click);
+            // 
             // Start
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(1082, 573);
+            this.ClientSize = new System.Drawing.Size(843, 470);
+            this.Controls.Add(this.finalName);
+            this.Controls.Add(this.Dice_Value);
             this.Controls.Add(this.Dice);
             this.Controls.Add(this.Next0);
             this.Controls.Add(this.nameTextBox);
@@ -158,9 +193,9 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.next1);
             this.Controls.Add(this.pictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.MaximumSize = new System.Drawing.Size(1100, 620);
-            this.MinimumSize = new System.Drawing.Size(1100, 620);
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.MaximumSize = new System.Drawing.Size(859, 509);
+            this.MinimumSize = new System.Drawing.Size(859, 509);
             this.Name = "Start";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -182,5 +217,7 @@
         private TextBox nameTextBox;
         private Button Next0;
         private PictureBox Dice;
+        private Label Dice_Value;
+        private Label finalName;
     }
 }

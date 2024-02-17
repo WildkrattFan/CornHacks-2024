@@ -5,13 +5,13 @@ public class gameAreaOne {
 
         System.out.println("Wizard: Greetings Traveler! Welcome to my humble abode. What should I call you?");
         String name = System.console().readLine();
+        character player; // Declare the player variable outside of the if-else statement
         // User input name
-        character player; // Declare the player variable outside of the if-else block
         if (dice.rollMediumChoice() >= 5) {
             player = new character(name);
         } else {
             System.out.println("Wizzard: " + name + " is a terrible name. I will call you Bob.");
-            player = new character("Bob");
+            player = new character("Bob"); // Remove the redundant 'Character' type declaration
         }
 
         // Choose to accept or decline the quest

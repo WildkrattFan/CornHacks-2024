@@ -1,10 +1,10 @@
 package Cornhacks2024;
 
-public class Character {
+public class character {
     private String playerName;
     private String playerAttribute;
 
-    public Character(String playerName, String playerAttribute) {
+    public character(String playerName, String playerAttribute) {
         this.playerName = playerName;
         this.playerAttribute = playerAttribute;
     }

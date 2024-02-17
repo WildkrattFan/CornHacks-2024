@@ -1,8 +1,5 @@
 package Cornhacks2024;
 
-import java.util.List;
-import java.util.ArrayList;
-
 public class textAdventureBase {
 
     public static void main(String[] args) {

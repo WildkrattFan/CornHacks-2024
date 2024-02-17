@@ -1,5 +1,12 @@
 package Cornhacks2024;
 
+//TODO
+
+// Make dragonsLair() -- Failure
+// Make goblinEncounter() -- Failure
+// Make southMountains() -- Success
+// Make eastVillage() -- Success
+
 public class gameAreaOne {
     public static void gameAeraOne() {
 

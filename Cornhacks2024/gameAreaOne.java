@@ -11,10 +11,11 @@ public class gameAreaOne {
     public static void gameAeraOne() {
 
         System.out.println("Wizard: Greetings Traveler! Welcome to my humble abode. What should I call you?");
+        dice diceInstance = new dice(); // Create an instance of the dice class
         String name = System.console().readLine();
         character player; // Declare the player variable outside of the if-else statement
         // User input name
-        if (dice.rollMediumChoice() >= 5) {
+        if (diceInstance.rollMediumChoice() >= 5) { // Use the diceInstance to call the rollMediumChoice() method
             player = new character(name);
         } else {
             System.out.println("Wizzard: " + name + " is a terrible name. I will call you Bob.");
@@ -34,7 +35,6 @@ public class gameAreaOne {
             
 
             // Choice success!
-            dice diceInstance = new dice();
             if (diceInstance.rollMediumChoice() >= 5) {
 
                 System.out.println("Wizard: Excellent! I knew I could count on you " + player.getName() + ".");

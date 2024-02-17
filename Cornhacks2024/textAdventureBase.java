@@ -14,22 +14,22 @@ public class textAdventureBase {
         String input = System.console().readLine();
         if (input.equals("yes")) {
             // Play Dice animation
-            if (dice.rollEasyChoice() <= 4) {
-                System.out.println("You have rolled a " + dice.rollEasyChoice() + " the game will now begin!");
+            if (Dice.rollEasyChoice() <= 4) {
+                System.out.println("You have rolled a " + Dice.rollEasyChoice() + " the game will now begin!");
                 System.out.println("Good luck!");
                 gameAreaOne.gameAeraOne(); 
             } else {
-                System.out.println("You have rolled a " + dice.rollEasyChoice() + ".");
+                System.out.println("You have rolled a " + Dice.rollEasyChoice() + ".");
                 System.out.println("You have died. Game over.");
                 System.exit(1);
             }
         } else if (input.equals("no")) {
             //Play DIce animation
-            if (dice.rollEasyChoice() <= 4){
-                System.out.printkn("You have rolled a " + dice.rollEasyChoice() + " the game will now end.");
+            if (Dice.rollEasyChoice() <= 4){
+                System.out.printkn("You have rolled a " + Dice.rollEasyChoice() + " the game will now end.");
                 System.out.println("Thank you for playing. Goodbye!");
             else {
-                System.out.println("You have rolled a " + dice.rollEasyChoice() + ". The game will now begin!");
+                System.out.println("You have rolled a " + Dice.rollEasyChoice() + ". The game will now begin!");
                 System.out.println("Womp womp.");
                 gameAreaOne.gameAeraOne();
             }

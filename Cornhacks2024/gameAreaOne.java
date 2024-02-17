@@ -81,6 +81,7 @@ public class gameAreaOne {
                 System.out.println("Good luck in the dragon's lair!");
                 dragonsLair(player);
             }
+            //test
 
             // Declines the quest
         } else if (input.equals("no")) {
@@ -104,4 +105,5 @@ public class gameAreaOne {
         }
 
     }
+    // test
 }

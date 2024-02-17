@@ -33,7 +33,7 @@ public class gameAreaOne {
         if (input.equals("yes")) {
 
             // Choice success!
-            if (dice.rollMediumChoice() >= 5) {
+            if (Dice.rollMediumChoice() >= 5) {
 
                 System.out.println("Wizard: Excellent! I knew I could count on you " + player.getName() + ".");
                 System.out.println("Wizard: Here is a map to the cave. Good luck!");

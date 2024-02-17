@@ -1,7 +1,13 @@
+package Cornhacks_2024;
 
 public class blackJackBot {
     public static void botAnalysis() {
         
+
+
+
+
+
         if(game.cardsValue(game.playerHand) >= 17){
             game.suggestStand();
         }
@@ -9,13 +15,12 @@ public class blackJackBot {
             checkDealerHand();
         }
 
-        private static void checkDealerHand(){
-            if(game.cardsValue(game.dealerUpCard) <= 6){
-                game.suggestHit();
-            }
-            else if(game.cardsValue(game.dealerHand) > 6){
-                game.suggestStand();
-            }
+    private static void checkDealerHand() {
+        if (game.cardsValue(game.dealerUpCard) <= 6) {
+            game.suggestHit();
+        } else if (game.cardsValue(game.dealerHand) > 6) {
+            game.suggestStand();
         }
-
     }
+
+}

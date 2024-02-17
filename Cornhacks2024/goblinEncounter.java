@@ -12,7 +12,7 @@ public class goblinEncounter {
     }
 
     public static void goblinFight() {
-        uglyGoblin(character.player);
+        uglyGoblin();
         String response = scanner.nextLine();
 
         if (response.equalsIgnoreCase("yes")) {

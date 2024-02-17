@@ -63,6 +63,16 @@ namespace CornHacks_Casino.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap dice {
+            get {
+                object obj = ResourceManager.GetObject("dice", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap kisspng_final_fantasy_ix_dissidia_final_fantasy_nt_dissidi_peking_opera_characters_5b31201650aaf1_8996581215299461343304 {
             get {
                 object obj = ResourceManager.GetObject("kisspng-final-fantasy-ix-dissidia-final-fantasy-nt-dissidi-peking-opera-character" +

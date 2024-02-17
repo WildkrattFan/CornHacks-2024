@@ -81,7 +81,7 @@ public class caveOfWonders {
         return roll >= threshold;
     }
 
-    public static void main(String[] args) {
+    public static void caveOfWonders() {
         crystalRiddles();
     }
 }

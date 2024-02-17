@@ -15,25 +15,27 @@ public class textAdventureBase {
         if (input.equals("yes")) {
             // Create an instance of the dice class
             dice diceInstance = new dice();
+            int rollChoice = diceInstance.rollEasyChoice();
 
             // Play Dice animation
-            if (diceInstance.rollEasyChoice() <= 4) {
-                System.out.println("You have rolled a " + diceInstance.rollEasyChoice() + " the game will now begin!");
+            if (rollChoice != 1) {
+                System.out.println("You have rolled a " + rollChoice + " the game will now begin!");
                 System.out.println("Good luck!");
                 gameAreaOne.gameAeraOne();
             } else {
-                System.out.println("You have rolled a " + diceInstance.rollEasyChoice() + ".");
+                System.out.println("You have rolled a " + rollChoice + ".");
                 System.out.println("You have died. Game over.");
                 System.exit(1);
             }
         } else if (input.equals("no")) {
-            // Play DIce animation
+            // Play DIce annimation
             dice dice = new dice();
-            if (dice.rollEasyChoice() <= 4) {
-                System.out.println("You have rolled a " + dice.rollEasyChoice() + " the game will now end.");
+            int rollChoice2 = dice.rollEasyChoice();
+            if (rollChoice2 <= 4) {
+                System.out.println("You have rolled a " + rollChoice2 + " the game will now end.");
                 System.out.println("Thank you for playing. Goodbye!");
             } else {
-                System.out.println("You have rolled a " + dice.rollEasyChoice() + ". The game will now begin!");
+                System.out.println("You have rolled a " + rollChoice2 + ". The game will now begin!");
                 System.out.println("Womp womp.");
                 gameAreaOne.gameAeraOne();
             }

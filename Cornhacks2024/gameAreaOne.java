@@ -48,6 +48,7 @@ public class gameAreaOne {
                 // dragon's lair failure
                 if (directionRoll == 1) {
                     System.out.println("You have chosen to head" + direction + ".");
+                    System.out.println("You rolled a " + directionRoll + "!");
                     System.out.println(
                             "Unfortunately along the way you fall through the ground and directly into a DRAGONS LAIR");
                     dragonsLair(player);
@@ -56,6 +57,7 @@ public class gameAreaOne {
                     // goblin's encounter failure
                 } else if (directionRoll == 2) {
                     System.out.println("You have chosen to head" + direction + ".");
+                    System.out.println("You rolled a " + directionRoll + "!");
                     System.out.println("Somehow along the way you get lost and find yourself surrounded by goblins!");
                     goblinEncounter(player);
                     // make goblin lair
@@ -64,11 +66,13 @@ public class gameAreaOne {
                 } else if (directionRoll >= 3) {
                     if (direction.equals("south")) {
                         System.out.println("You have chosen to head south.");
+                        System.out.println("You rolled a " + directionRoll + "!");
                         southMountains(player);
                         // make southMountains
 
                     } else if (direction.equals("east")) {
                         System.out.println("You have chosen to head east.");
+                        System.out.println("You rolled a " + directionRoll + "!");
                         eastVillageplayer(player);
                         // make eastVillage
                     } else {
@@ -88,7 +92,6 @@ public class gameAreaOne {
             // Declines the quest
         } else if (input.equals("no")) {
             
-            dice diceInstance = new dice();
             int noAttempt = diceInstance.rollMediumChoice();
             // Decline quest failure
             if (noAttempt <= 5) {

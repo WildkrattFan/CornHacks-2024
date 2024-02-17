@@ -2,7 +2,7 @@ package Cornhacks2024;
 
 import java.util.Random;
 
-public class Dice {
+public class dice {
     private Random random = new Random();
 
     public int rollEasyChoice() {

@@ -1,5 +1,7 @@
 package Cornhacks2024;
+
 import java.util.Scanner;
+
 public class dragonsLair {
     public static void readyToDieMessage(){
         System.out.println("Are you ready to die")

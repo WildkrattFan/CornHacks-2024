@@ -7,7 +7,6 @@ public class dice {
 
     public int rollEasyChoice() {
         return random.nextInt(5) + 1;
-
     }
 
     public int rollMediumChoice() {

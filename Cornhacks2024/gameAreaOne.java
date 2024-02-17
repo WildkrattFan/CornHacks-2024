@@ -11,10 +11,11 @@ public class gameAreaOne {
     public static void gameAeraOne() {
 
         System.out.println("Wizard: Greetings Traveler! Welcome to my humble abode. What should I call you?");
+        dice diceInstance = new dice(); // Create an instance of the dice class
         String name = System.console().readLine();
         character player; // Declare the player variable outside of the if-else statement
         // User input name
-        if (dice.rollMediumChoice() >= 5) {
+        if (diceInstance.rollMediumChoice() >= 5) { // Use the diceInstance to call the rollMediumChoice() method
             player = new character(name);
         } else {
             System.out.println("Wizzard: " + name + " is a terrible name. I will call you Bob.");
@@ -31,21 +32,23 @@ public class gameAreaOne {
 
         // Accepts the quest
         if (input.equals("yes")) {
+            
 
             // Choice success!
-            if (Dice.rollMediumChoice() >= 5) {
+            if (diceInstance.rollMediumChoice() >= 5) {
 
                 System.out.println("Wizard: Excellent! I knew I could count on you " + player.getName() + ".");
                 System.out.println("Wizard: Here is a map to the cave. Good luck!");
                 System.out.println("Would you like to head to the South or to the East?");
                 String direction = System.console().readLine();
-                int directionRoll = dice.rollMediumChoice();
+                int directionRoll = diceInstance.rollMediumChoice();
 
                 // choice failures
 
                 // dragon's lair failure
                 if (directionRoll == 1) {
                     System.out.println("You have chosen to head" + direction + ".");
+                    System.out.println("You rolled a " + directionRoll + "!");
                     System.out.println(
                             "Unfortunately along the way you fall through the ground and directly into a DRAGONS LAIR");
                     dragonsLair(player);
@@ -54,6 +57,7 @@ public class gameAreaOne {
                     // goblin's encounter failure
                 } else if (directionRoll == 2) {
                     System.out.println("You have chosen to head" + direction + ".");
+                    System.out.println("You rolled a " + directionRoll + "!");
                     System.out.println("Somehow along the way you get lost and find yourself surrounded by goblins!");
                     goblinEncounter(player);
                     // make goblin lair
@@ -62,11 +66,13 @@ public class gameAreaOne {
                 } else if (directionRoll >= 3) {
                     if (direction.equals("south")) {
                         System.out.println("You have chosen to head south.");
+                        System.out.println("You rolled a " + directionRoll + "!");
                         southMountains(player);
                         // make southMountains
 
                     } else if (direction.equals("east")) {
                         System.out.println("You have chosen to head east.");
+                        System.out.println("You rolled a " + directionRoll + "!");
                         eastVillageplayer(player);
                         // make eastVillage
                     } else {
@@ -85,7 +91,8 @@ public class gameAreaOne {
 
             // Declines the quest
         } else if (input.equals("no")) {
-            int noAttempt = dice.rollMediumChoice();
+            
+            int noAttempt = diceInstance.rollMediumChoice();
             // Decline quest failure
             if (noAttempt <= 5) {
                 System.out.println("Wizard: I understand. It is a dangerous task.");

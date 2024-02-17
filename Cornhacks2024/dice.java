@@ -6,15 +6,21 @@ public class Dice {
     private String diceType;
     private int numSides;
     private String diceDifficulty;
+    private Random random;
 
-    public Dice(String diceType, int numSides, String diceDifficulty) {
+    public Dice(String diceType, int numSides, String diceDifficulty, Random random) {
         this.numSides = numSides;
         this.diceType = diceType;
         this.diceDifficulty = diceDifficulty;
+        this.random = random;
     }
 
     public String getDiceType() {
         return this.diceType;
+    }
+
+    public String getDiceDifficulty() {
+        return this.diceDifficulty;
     }
 
     public int getNumSides() {
@@ -28,19 +34,16 @@ public class Dice {
     }
 
     public int rollEasyChoice(String args[]) {
-        Random input = new random(0, 5);
-        return input.nextInt(5);
+        return random.nextInt(5) + 1;
 
     }
 
-    @Override
     public int rollMediumChoice(String args[]) {
-        Random input = new random(0, 10);
-        return input.nextInt(10);
+        return random.nextInt(10) + 1;
     }
 
     public int rollHardChoice(String args[]) {
-        Random input = new random(0, 15);
-        return input.nextInt(15);
+        return random.nextInt(15) + 1;
     }
+
 }

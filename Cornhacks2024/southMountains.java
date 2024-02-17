@@ -1,5 +1,8 @@
 package Cornhacks2024;
 
+//TODO: Cave of wonders() -- Success
+//TODO: Mugged() -- Failure
+
 public class southMountains {
     public static void exploreSouthMountains(character player) {
         System.out.println("You enter the southern mountains...");
@@ -7,7 +10,8 @@ public class southMountains {
         System.out.println("It is truely a sight to behold.");
         System.out.println("You feel a sense of adventure and wonder.");
         System.out.println("You feel as though you could take on the world.");
-        int roll = dice.rollMediumChoice();
+        dice diceObject = new dice();
+        int roll = diceObject.rollMediumChoice();
 
         if (roll >= 5) {
             System.out.println("You rolled a " + roll);
@@ -32,7 +36,8 @@ public class southMountains {
     }
 
     public static void depressed(character player) {
-        int roll = dice.rollMediumChoice();
+        dice diceObject = new dice();
+        int roll = diceObject.rollMediumChoice();
         System.out.println("You feel a sense of dread and despair.");
         System.out.println("You feel as though you have failed.");
 
@@ -42,7 +47,7 @@ public class southMountains {
             System.out.println("Would you like to try and continue?");
             String input = System.console().readLine();
             if (input.equals("yes")) {
-                int roll2 = dice.rollMediumChoice();
+                int roll2 = diceObject.rollMediumChoice();
                 if (roll2 >= 7) {
                     System.out.println("You rolled a " + roll2);
                     System.out.println("You feel a sense of determination.");
@@ -54,7 +59,7 @@ public class southMountains {
                     System.exit(1);
                 }
             } else {
-                int roll3 = dice.rollMediumChoice();
+                int roll3 = diceObject.rollMediumChoice();
                 if (roll3 >= 7) {
                     System.out.println("You rolled a " + roll3);
                     System.out.println("You feel a sense of determination.");

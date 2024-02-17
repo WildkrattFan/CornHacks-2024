@@ -1,7 +1,21 @@
-import net.dv8tion.jda.core.AccountType;
 
+public class blackJackBot {
+    public static void botAnalysis() {
+        
+        if(game.cardsValue(game.playerHand) >= 17){
+            game.suggestStand();
+        }
+        else if(game.cardsValue(game.platerHand) <= 16){
+            checkDealerHand();
+        }
 
-public class statisticsBot {
-    public static void main(String[] args) {
-        // Create a new instance of the bot
-        JDA bot = new JDABuilder(AccountType.BOT)
+        private static void checkDealerHand(){
+            if(game.cardsValue(game.dealerUpCard) <= 6){
+                game.suggestHit();
+            }
+            else if(game.cardsValue(game.dealerHand) > 6){
+                game.suggestStand();
+            }
+        }
+
+    }

@@ -8,7 +8,7 @@ public class Dice {
     private String diceDifficulty;
     private Random random;
 
-    public dice(String diceType, int numSides, String diceDifficulty, Random random) {
+    public Dice(String diceType, int numSides, String diceDifficulty, Random random) {
         this.numSides = numSides;
         this.diceType = diceType;
         this.diceDifficulty = diceDifficulty;

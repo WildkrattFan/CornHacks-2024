@@ -30,7 +30,7 @@ public class gameAreaOne {
         // Player input yes or no
         String input = System.console().readLine();
 
-        // Accepts the quest
+        // Accepts the question
         if (input.equals("yes")) {
             
 

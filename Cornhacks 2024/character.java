@@ -1,13 +1,13 @@
 import java.util.ArrayList;
 public class player{
-    private String name;
+    private String playerName;
 }
-public player(String name){
-    this.name = name;
+public player(String playerName){
+    this.playerName = playerName;
 }
 public String getName(){
-    return this.name;
+    return this.playerName;
 }
-public setName(String name){
-    this.name = name;
+public setName(String playerName){
+    this.playerName = playerName;
 }

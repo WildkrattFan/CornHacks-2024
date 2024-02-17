@@ -5,15 +5,15 @@ import java.util.Random;
 public class dice {
     private Random random = new Random();
 
-    public static int rollEasyChoice() {
+    public int rollEasyChoice() {
         return random.nextInt(5) + 1;
     }
 
-    public static int rollMediumChoice() {
+    public int rollMediumChoice() {
         return random.nextInt(10) + 1;
     }
 
-    public static int rollHardChoice() {
+    public int rollHardChoice() {
         return random.nextInt(15) + 1;
     }
 }

@@ -6,28 +6,28 @@ public class character {
     private String playerName;
     private String playerAttribute;
     private ArrayList<String> inventory;
+    private int healthBar;
 
     public character(String playerName) {
         this.playerName = playerName;
         this.inventory = new ArrayList<>();
-    }
-
-    public character(String playerName, String playerAttribute) {
-        this.playerName = playerName;
-        this.playerAttribute = playerAttribute;
-        this.inventory = new ArrayList<>();
+        this.healthBar = 100; // Set initial health
     }
 
     public String getName() {
         return this.playerName;
     }
 
-    public String getAttribute() {
-        return this.playerAttribute;
-    }
-
     public ArrayList<String> getInventory() {
         return this.inventory;
+    }
+
+    public int getHealthBar() {
+        return this.healthBar;
+    }
+
+    public void addInventoryItem(String item) {
+        this.inventory.add(item);
     }
 
     public String playerToString() {

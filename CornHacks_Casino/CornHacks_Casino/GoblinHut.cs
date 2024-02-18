@@ -97,6 +97,10 @@ namespace CornHacks_Casino
             {
                 dialogue.Text = "Good luck next time,\nclick next to close the game";
             }
+            if (count == 9)
+            {
+                this.Close();
+            }
             if (count == 41)
             {
                 Wizard.Show();

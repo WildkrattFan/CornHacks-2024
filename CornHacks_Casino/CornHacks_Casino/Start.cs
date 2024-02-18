@@ -3,13 +3,14 @@ namespace CornHacks_Casino
     
     public partial class Start : Form
     {
+        
         Random random = new Random();
         public string name = "";
         public int diceNum;
         public int count = 0;
         public int location;
 
-
+        
         public int Random(int max)
         {
             int randomNum = random.Next(1, (max + 1));
@@ -198,7 +199,7 @@ namespace CornHacks_Casino
             diceNum = Random(2);
             if (diceNum == 1)
             {
-                finalName.Text = "Sorry, " + name + ", it appears\nyou have choice";
+                finalName.Text = "Sorry, " + name + ", it appears\nyou no have choice";
             }
             else
             {

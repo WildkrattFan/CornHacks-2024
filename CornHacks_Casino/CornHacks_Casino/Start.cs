@@ -6,8 +6,8 @@ namespace CornHacks_Casino
         Random random = new Random();
         public string name = "";
         public int diceNum;
-        public string[] location = new string[] { "Dragons Lair", "South Mountains", "East Village", "Goblin Hut", "Gold Hoard" };
         public int count = 0;
+        public int location;
 
 
         public int Random(int max)
@@ -91,7 +91,7 @@ namespace CornHacks_Casino
             }
             if (count == 6)
             {
-                finalName.Text = "I need you to travel north to the cave \nof wonders and get the gauntlet of power";
+                finalName.Text = "I need you to travel to the Cave \nof Wonders and get the gauntlet of power";
             }
             
             if (count == 7)
@@ -120,9 +120,62 @@ namespace CornHacks_Casino
             }
             if (count == 10)
             {
-                DragonLair dragonLair = new DragonLair();
+                diceNum = Random(10);
+                if (diceNum % 2 == 0)
+                {
+                    finalName.Text = "You have chosen to go east!";
+                    diceNum = Random(5);
+                    if (diceNum == 1)
+                    {
+                        location = 3;
+                    }
+                    else
+                    {
+                        location = 4;
+                    }
+                }
+                else
+                {
+                    finalName.Text = "You have chosen to go west!";
+                    diceNum = Random(5);
+                    if (diceNum == 1)
+                    {
+                        location = 1;
+                    }
+                    else
+                    {
+                        location = 2;
+                    }
+                }
+
+               
+            }
+            if (count == 11)
+            {
+                
+                DragonLair dragon = new DragonLair();
+                SouthMountains mountains = new SouthMountains();
+                GoblinHut goblin = new GoblinHut();
+                EastVillage village = new EastVillage();
+                CaveOfWonder cave = new CaveOfWonder();
                 this.Hide();
-                dragonLair.Show();
+                if (location == 1)
+                {
+                    dragon.Show();
+                }
+                if (location == 2)
+                {
+                    mountains.Show();
+                }
+                if (location == 3)
+                {
+                    goblin.Show();
+                }
+                if (location == 4)
+                {
+                    village.Show();
+                }
+                
             }
 
         }

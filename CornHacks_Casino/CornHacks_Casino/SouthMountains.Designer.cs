@@ -35,8 +35,15 @@
             this.finalName = new System.Windows.Forms.Label();
             this.Next = new System.Windows.Forms.Button();
             this.Wizard = new System.Windows.Forms.PictureBox();
+            this.YesBtn = new System.Windows.Forms.Button();
+            this.NoBtn = new System.Windows.Forms.Button();
+            this.Girl = new System.Windows.Forms.PictureBox();
+            this.Dice_Value = new System.Windows.Forms.Label();
+            this.Dice = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Wizard)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Girl)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Dice)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -57,9 +64,9 @@
             this.dialogue.Font = new System.Drawing.Font("SimSun", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.dialogue.Location = new System.Drawing.Point(7, 22);
             this.dialogue.Name = "dialogue";
-            this.dialogue.Size = new System.Drawing.Size(544, 27);
+            this.dialogue.Size = new System.Drawing.Size(446, 27);
             this.dialogue.TabIndex = 17;
-            this.dialogue.Text = "Oh no! You ended up in a dragons lair!";
+            this.dialogue.Text = "You made it to South Mountains!";
             // 
             // Speaker
             // 
@@ -93,6 +100,7 @@
             this.Next.TabIndex = 7;
             this.Next.Text = "Next";
             this.Next.UseVisualStyleBackColor = false;
+            this.Next.Click += new System.EventHandler(this.Next_Click);
             // 
             // Wizard
             // 
@@ -104,14 +112,80 @@
             this.Wizard.TabIndex = 18;
             this.Wizard.TabStop = false;
             // 
+            // YesBtn
+            // 
+            this.YesBtn.BackColor = System.Drawing.Color.MistyRose;
+            this.YesBtn.Font = new System.Drawing.Font("SimSun", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.YesBtn.Location = new System.Drawing.Point(157, 390);
+            this.YesBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.YesBtn.Name = "YesBtn";
+            this.YesBtn.Size = new System.Drawing.Size(129, 51);
+            this.YesBtn.TabIndex = 18;
+            this.YesBtn.Text = "Continue";
+            this.YesBtn.UseVisualStyleBackColor = false;
+            this.YesBtn.Visible = false;
+            this.YesBtn.Click += new System.EventHandler(this.YesBtn_Click);
+            // 
+            // NoBtn
+            // 
+            this.NoBtn.BackColor = System.Drawing.Color.MistyRose;
+            this.NoBtn.Font = new System.Drawing.Font("SimSun", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.NoBtn.Location = new System.Drawing.Point(11, 390);
+            this.NoBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.NoBtn.Name = "NoBtn";
+            this.NoBtn.Size = new System.Drawing.Size(128, 51);
+            this.NoBtn.TabIndex = 19;
+            this.NoBtn.Text = "Rest";
+            this.NoBtn.UseVisualStyleBackColor = false;
+            this.NoBtn.Visible = false;
+            this.NoBtn.Click += new System.EventHandler(this.NoBtn_Click);
+            // 
+            // Girl
+            // 
+            this.Girl.BackColor = System.Drawing.Color.Transparent;
+            this.Girl.Image = ((System.Drawing.Image)(resources.GetObject("Girl.Image")));
+            this.Girl.Location = new System.Drawing.Point(249, -17);
+            this.Girl.Name = "Girl";
+            this.Girl.Size = new System.Drawing.Size(355, 493);
+            this.Girl.TabIndex = 20;
+            this.Girl.TabStop = false;
+            this.Girl.Visible = false;
+            // 
+            // Dice_Value
+            // 
+            this.Dice_Value.AutoSize = true;
+            this.Dice_Value.Font = new System.Drawing.Font("SimSun", 32.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Dice_Value.Location = new System.Drawing.Point(31, 24);
+            this.Dice_Value.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Dice_Value.Name = "Dice_Value";
+            this.Dice_Value.Size = new System.Drawing.Size(41, 43);
+            this.Dice_Value.TabIndex = 22;
+            this.Dice_Value.Text = "0";
+            // 
+            // Dice
+            // 
+            this.Dice.BackColor = System.Drawing.Color.Transparent;
+            this.Dice.Image = global::CornHacks_Casino.Properties.Resources.dice;
+            this.Dice.Location = new System.Drawing.Point(14, 13);
+            this.Dice.Margin = new System.Windows.Forms.Padding(2);
+            this.Dice.Name = "Dice";
+            this.Dice.Size = new System.Drawing.Size(73, 68);
+            this.Dice.TabIndex = 21;
+            this.Dice.TabStop = false;
+            // 
             // SouthMountains
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::CornHacks_Casino.Properties.Resources.mountains;
             this.ClientSize = new System.Drawing.Size(984, 469);
+            this.Controls.Add(this.Dice_Value);
+            this.Controls.Add(this.Dice);
+            this.Controls.Add(this.YesBtn);
+            this.Controls.Add(this.NoBtn);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.Wizard);
+            this.Controls.Add(this.Girl);
             this.MaximumSize = new System.Drawing.Size(1000, 508);
             this.MinimumSize = new System.Drawing.Size(1000, 508);
             this.Name = "SouthMountains";
@@ -119,7 +193,10 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Wizard)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Girl)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Dice)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -131,5 +208,10 @@
         private Label finalName;
         private Button Next;
         private PictureBox Wizard;
+        private Button YesBtn;
+        private Button NoBtn;
+        private PictureBox Girl;
+        private Label Dice_Value;
+        private PictureBox Dice;
     }
 }

@@ -57,9 +57,9 @@
             this.dialogue.Font = new System.Drawing.Font("SimSun", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.dialogue.Location = new System.Drawing.Point(7, 22);
             this.dialogue.Name = "dialogue";
-            this.dialogue.Size = new System.Drawing.Size(544, 27);
+            this.dialogue.Size = new System.Drawing.Size(488, 27);
             this.dialogue.TabIndex = 17;
-            this.dialogue.Text = "Oh no! You ended up in a dragons lair!";
+            this.dialogue.Text = "You made it to the Cave of Wonder!";
             // 
             // Speaker
             // 
@@ -93,6 +93,7 @@
             this.Next.TabIndex = 7;
             this.Next.Text = "Next";
             this.Next.UseVisualStyleBackColor = false;
+            this.Next.Click += new System.EventHandler(this.Next_Click);
             // 
             // Wizard
             // 
@@ -108,6 +109,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::CornHacks_Casino.Properties.Resources.Cave;
             this.ClientSize = new System.Drawing.Size(984, 469);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.Wizard);

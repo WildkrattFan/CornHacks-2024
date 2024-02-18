@@ -62,9 +62,9 @@
             this.dialogue.Font = new System.Drawing.Font("SimSun", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.dialogue.Location = new System.Drawing.Point(7, 22);
             this.dialogue.Name = "dialogue";
-            this.dialogue.Size = new System.Drawing.Size(544, 27);
+            this.dialogue.Size = new System.Drawing.Size(488, 27);
             this.dialogue.TabIndex = 17;
-            this.dialogue.Text = "Oh no! You ended up in a dragons lair!";
+            this.dialogue.Text = "On your way, you fell into a cave!";
             // 
             // Speaker
             // 

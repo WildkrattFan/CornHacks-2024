@@ -17,10 +17,10 @@ public class dragonsLair {
         System.out.println("Will you dodge the Dragon?");
         System.out.println("Type 'yes' or 'no'");
         String runTrue = scanner.nextLine();
-        while (runTrue.equals("yes") == true || runTrue.equals("no") == true) {
+        while (true) {
             if (runTrue.equals("yes")) {
                 roll = dice.rollMediumChoice();
-                if (roll >= 6) {
+                if (roll >= 6) { // 50/50 PROBABILITY
                     System.out.println("You rolled a " + roll);
                     System.out.println("Congrats, you have dodged the Dragon");
                     southMountains.exploreSouthMountains(player);
@@ -29,7 +29,7 @@ public class dragonsLair {
                     System.out.println("The Dragon hits you with a wrath of envious fire \n you die");
                     System.exit(0);
                 }
-            } else if (runTrue.equals("no")) {
+            } else if (runTrue.equals("no")) { //100 PERCENT PROBABILITY
                 System.out.println("Uh oh, you died");
                 System.exit(0);
             } else {
@@ -42,7 +42,7 @@ public class dragonsLair {
     public static void fistFight(int roll, character player) {
         System.out.println("You rolled a " + roll);
         System.out.println("You decide to fist fight the dragon");
-        int roll2 = 20;
+        int roll2 = 20; //100 PERCENT PROBABILITY
         System.out.println("You rolled a " + roll2);
         System.out.println(
                 "You punch the dragon straight in its nose, \n you are then engulfed in a massive flame and die");
@@ -60,12 +60,12 @@ public class dragonsLair {
         System.out.println("The Dragon sees you how would you like to react");
         System.out.println("Silly choice I have a better one");
         roll = (dice.rollHardChoice());
-        if (roll == 16) {
+        if (roll == 16) { // 1/10 PROBALIITY
             magicWizardHand(player);
-        } else if (roll >= 8) {
+        } else if (roll >= 8) { //6/10 PROBABILITY
             runAway(roll, scanner, dice, player);
         } else {
-            fistFight(roll, player);
+            fistFight(roll, player); // 3/10 PROBABILITY
         }
     }
 
@@ -83,12 +83,12 @@ public class dragonsLair {
         while (!input.equals("yes")) {
             // Fix: Remove the String type declaration
             System.out.println("SORRY WRONG ANSWER!!! \n Lets try that again...");
-            input = scanner.nextLine();
+            input = scanner.nextLine(); //THIS IS USER INPUT YES/NO
             readyToDieMessage();
         }
         int roll = dice.rollEasyChoice(); // Fix: Change 'dice' to 'dice.rollEasyChoice()'
         if (roll <= 3) {
-            dragonInLair(scanner, roll, player);
+            dragonInLair(scanner, roll, player); //THIS IS PROBAILITY 50/50 FOR DRAGON IN LAIR
         } else {
             dragonNotInLair(player);
         }

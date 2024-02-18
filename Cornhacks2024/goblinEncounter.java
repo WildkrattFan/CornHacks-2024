@@ -10,64 +10,43 @@ public class goblinEncounter {
         System.out.println("What are you staring at? Do you want a fight?");
         System.out.println("Type 'yes' or 'no'");
         String response = scanner.nextLine();
-        if(response.equalsIgnoreCase("yes")) {
+        if (response.equalsIgnoreCase("yes")) {
             goblinFight(player);
-        } else if(response.equalsIgnoreCase("no")) {
+        } else if (response.equalsIgnoreCase("no")) {
             System.out.println("You chose not to fight. The goblin decides to fight you anyway.");
-            System.out.println("Rolling the dice to decide the outcome of the fight...");
-
-            int diceResult = dice.rollMediumChoice();
-            System.out.println("You rolled: " + diceResult);
-
-            if (diceResult > 10) {
-                System.out.println("You defeated the goblin!");
-                System.out.println("You continue to the east!");
-                eastVillage.eastVillagePlace(player);
-                // Handle victory scenario
-            } else {
-                System.out.println("The goblin defeated you!");
-                System.exit(1);
-                // Handle defeat scenario
-            }
+            simulateFight(player);
         } else {
             System.out.println("Invalid response. Please type 'yes' or 'no'.");
+            uglyGoblin(player); // Call the method again to ask for a valid response
         }
     }
 
     public static void goblinFight(character player) {
-        uglyGoblin(player);
-        String response = scanner.nextLine();
+        System.out.println("You chose to fight the ugly goblin!");
+        simulateFight(player);
+    }
 
-        if (response.equalsIgnoreCase("yes")) {
-            System.out.println("You chose to fight the ugly goblin!");
-            System.out.println("Rolling the dice to decide the outcome of the fight...");
-
-            int diceResult = dice.rollMediumChoice();
-            System.out.println("You rolled: " + diceResult);
-
-            if (diceResult > 10) {
-                System.out.println("You defeated the goblin!");
-                // Handle victory scenario
+    public static void simulateFight(character player) {
+        System.out.println("Rolling the easy dice to decide the outcome of the fight...");
+        int diceResult = dice.rollEasyChoice();
+        System.out.println("You rolled: " + diceResult);
+        if (diceResult > 2) {
+            System.out.println("You defeated the goblin!");
+            System.out.println("Or did you?");
+            System.out.println("Is that all you got big guy?");
+            System.out.println("Rolling the medium dice to decide the outcome of the fight...");
+            int diceResult2 = dice.rollMediumChoice();
+            System.out.println("You rolled: " + diceResult2);
+            if (diceResult2 > 6) {
+                System.out.println("You continue to the east!");
+                eastVillage.eastVillagePlace(player); // Handle victory scenario
             } else {
                 System.out.println("The goblin defeated you!");
-                // Handle defeat scenario
-            }
-        } else if (response.equalsIgnoreCase("no")) {
-            System.out.println("You chose not to fight. The goblin decides to fight you anyway.");
-            System.out.println("Rolling the dice to decide the outcome of the fight...");
-
-            int diceResult = dice.rollMediumChoice();
-            System.out.println("You rolled: " + diceResult);
-
-            if (diceResult > 10) {
-                System.out.println("You defeated the goblin!");
-                // Handle victory scenario
-            } else {
-                System.out.println("The goblin defeated you!");
-                // Handle defeat scenario
+                System.exit(1); // Handle defeat scenario
             }
         } else {
-            System.out.println("Invalid response. Please type 'yes' or 'no'.");
+            System.out.println("The goblin defeated you!");
+            System.exit(1); // Handle defeat scenario
         }
     }
 }

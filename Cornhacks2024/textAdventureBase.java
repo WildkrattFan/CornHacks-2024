@@ -7,13 +7,13 @@ public class textAdventureBase {
 
         System.out.println("Welcome to the amazing world of Valdoria brave adentureer!");
         System.out.println("You are about to embark on a journey that will test your wits and courage.");
-        System.out.println(
-                "You will face many challenges and make many choices all of which will depend on... Your luck!");
+        System.out.println("You will face many challenges and make many choices all of which will depend on... Your luck!");
         System.out.println("Are you ready to begin your adventure?");
         System.out.println("Type 'yes' to begin or 'no' to exit the game.");
         String input = System.console().readLine();
         if (input.equals("yes")) {
             // Create an instance of the dice class
+            System.out.println("Magnificent, to help you on your journey I shall");
             dice diceInstance = new dice();
             int rollChoice = diceInstance.rollEasyChoice();
 

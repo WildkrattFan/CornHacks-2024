@@ -13,14 +13,14 @@ public class textAdventureBase {
         String input = System.console().readLine();
         if (input.equals("yes")) {
             // Create an instance of the dice class
-            System.out.println("Magnificent, to help you on your journey I shall");
+            System.out.println("Magnificent, to help you on your journey I shall offer you a gift.");
             dice diceInstance = new dice();
             int rollChoice = diceInstance.rollEasyChoice();
 
             // Play Dice animation
             if (rollChoice != 1) {
                 System.out.println("You have rolled a " + rollChoice + " the game will now begin!");
-                System.out.println("Good luck!");
+                System.out.println("Behold the first dice of power, Good luck!");
                 gameAreaOne.gameAeraOne();
             } else {
                 System.out.println("You have rolled a " + rollChoice + ".");

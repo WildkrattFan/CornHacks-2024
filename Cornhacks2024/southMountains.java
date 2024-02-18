@@ -17,7 +17,9 @@ public class southMountains {
             System.out.println("You rolled a " + roll);
             System.out.println("You feel a sense of adventure and wonder.");
             System.out.println("You feel as though you could take on the world.");
-            rushDownMountain(player); 
+
+            // 5/10 CHANCE OF RUSHING DOWN MOUNTAIN
+            rushDownMountain(player);
         } else {
             System.out.println("You rolled a " + roll);
             System.out.println("You get a sudden sense of dread.");
@@ -26,6 +28,7 @@ public class southMountains {
             System.out.println("Get out of here.");
             System.out.println("Get out!");
             System.out.println("OUT OUT OUT OUT OUT OUT OUT!!!");
+            // 5/10 CHANCE OF DEPRESSION
             depressed(player);
         }
     }
@@ -38,6 +41,7 @@ public class southMountains {
         System.out.println("You sprint down the mountain with the speed of the fastest horses.");
         System.out.println("You feel the wind in your hair and the sun on your face.");
         System.out.println("You come to a stop at the base of the mountain, feeling invigorated.");
+        // 5/10 CHANCE OF SPOTTING SOMETHING
         if (roll >= 5) {
             System.out.println("You rolled a " + roll);
             System.out.println("You suddenly spot something in the distance.");
@@ -50,8 +54,10 @@ public class southMountains {
                     System.out.println("You find a cave in the distance.");
                     System.out.println("You feel a sense of wonder and excitement.");
                     System.out.println("You feel as though you could take on the world.");
+                    // 5/10 CHANCE OF CAVE OF WONDERS
                     caveOfWonders.crypticCrystals(player);
                 } else {
+                    // 5/10 CHANCE OF RANDOMLY LEAVING
                     System.out.println("You turn back and leave the mountains.");
                     System.out.println("You feel as though you have missed out on something great.");
                     System.exit(1);
@@ -63,10 +69,12 @@ public class southMountains {
                     System.out.println("You find a cave in the distance.");
                     System.out.println("You feel a sense of wonder and excitement.");
                     System.out.println("You feel as though you could take on the world.");
+                    // 5/10 CHANCE OF CAVE OF WONDERS
                     caveOfWonders.crypticCrystals(player);
                 } else {
                     System.out.println("You turn back and leave the mountains.");
                     System.out.println("You are suddenly attacked by a group of bandits!");
+                    // 5/10 CHANCE OF MUGGED
                     mugged(player);
                 }
             }
@@ -75,6 +83,7 @@ public class southMountains {
             System.out.println("You rolled a " + roll);
             System.out.println("You feel a sense of dread and despair.");
             System.out.println("You feel as though you have failed.");
+            // 5/10 CHANCE OF DEPRESSION
             depressed(player);
         }
 
@@ -97,8 +106,10 @@ public class southMountains {
                     System.out.println("You rolled a " + roll2);
                     System.out.println("You feel a sense of determination.");
                     System.out.println("You feel as though you could take on the world.");
+                    // 7/10 CHANCE OF RUSHING DOWN MOUNTAIN
                     rushDownMountain(player);
                 } else {
+                    // 3/10 CHANCE OF DEPRESSION CAUSING YOU TO LEAVE
                     System.out.println("You rolled a " + roll2);
                     System.out.println("Your dread continues to escalate and you are unable to continue");
                     System.exit(1);
@@ -109,8 +120,10 @@ public class southMountains {
                     System.out.println("You rolled a " + roll3);
                     System.out.println("You feel a sense of determination.");
                     System.out.println("You feel as though you could take on the world.");
+                    // 7/10 CHANCE OF RUSHING DOWN MOUNTAIN
                     rushDownMountain(player);
                 } else {
+                    // 3/10 CHANCE OF DEPRESSION CAUSING YOU TO LEAVE
                     System.out.println("You rolled a " + roll3);
                     System.out.println("You turn back and leave the mountains. Forever haunted by the dread you felt.");
                     System.exit(1);
@@ -134,8 +147,10 @@ public class southMountains {
                 System.out.println("You are able to fight off the bandits and escape.");
                 System.out.println("You leave the mountains and continue on your journey.");
                 System.out.println("Along the way you run into the Cave of Wonders!");
+                // 1/10 CHANCE OF ESCAPING TO CAVE OF WONDERS
                 caveOfWonders.crypticCrystals(player);
             } else {
+                // 9/10 CHANCE OF DYING TO BANDITS
                 System.out.println("You rolled a " + roll);
                 System.out.println("You are quickly overpowered and killed.");
                 System.exit(1);
@@ -145,11 +160,13 @@ public class southMountains {
             dice diceObject = new dice();
             int roll = diceObject.rollHardChoice();
             if (roll >= 10) {
+                // 9/10 CHANCE OF BEING ENSLAVED
                 System.out.println("You rolled a " + roll);
                 System.out.println("The bandits accept your surrender and take you as their servant.");
                 System.out.println("You are forced to work for them for the rest of your life.");
                 System.exit(1);
             } else {
+                // 1/10 CHANCE OF DYING TO BANDITS
                 System.out.println("You rolled a " + roll);
                 System.out.println("The bandits do not accept your surrender.");
                 System.out.println("You are quickly overpowered and killed.");

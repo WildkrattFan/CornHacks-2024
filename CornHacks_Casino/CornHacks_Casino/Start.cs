@@ -6,7 +6,7 @@ namespace CornHacks_Casino
         Random random = new Random();
         public string name = "";
         public int diceNum;
-        public string[] location = new string[] { "Dragons Lair", "South Mountains", "East Village", "Goblin Hut", "Gold Hoard", "South Mountains" };
+        public string[] location = new string[] { "Dragons Lair", "South Mountains", "East Village", "Goblin Hut", "Gold Hoard" };
         public int count = 0;
 
 
@@ -58,7 +58,7 @@ namespace CornHacks_Casino
             }
             if (count == 2)
             {
-                finalName.Text = "Welcome to my humble Abode!";
+                finalName.Text = "Welcome to my humble abode!";
             }
             if (count == 3)
             {
@@ -68,7 +68,7 @@ namespace CornHacks_Casino
             }
             if (count == 4)
             {
-                diceNum = Random(6);
+                diceNum = Random(10);
                 Dice_Value.Text = diceNum.ToString();
                 Dice_Value.Show();
                 Dice.Show();
@@ -101,6 +101,30 @@ namespace CornHacks_Casino
                 NoBtn.Show();
                 Next0.Hide();
             }
+            if (count == 8)
+            {
+                finalName.Text = "You must complete the challenge\nClick next to begin";
+                count++;
+            }
+            if (count == 13)
+            {
+                finalName.Text = "Click next to close to application";
+            }
+            if (count == 14)
+            {
+                this.Close();
+            }
+            if (count == 9)
+            {
+                finalName.Text = "Click next to begin";
+            }
+            if (count == 10)
+            {
+                DragonLair dragonLair = new DragonLair();
+                this.Hide();
+                dragonLair.Show();
+            }
+
         }
 
         private void finalName_Click(object sender, EventArgs e)
@@ -111,6 +135,33 @@ namespace CornHacks_Casino
         private void Next2_Click(object sender, EventArgs e)
         {
            
+        }
+
+        private void NoBtn_Click(object sender, EventArgs e)
+        {
+            Next0.Show();
+            YesBtn.Hide();
+            NoBtn.Hide();
+            diceNum = Random(2);
+            if (diceNum == 1)
+            {
+                finalName.Text = "Sorry, " + name + ", it appears\nyou have choice";
+            }
+            else
+            {
+                count = 12;
+                finalName.Text = "I understand, it is a difficult task.\nI will find someone else";
+
+            }
+        }
+
+        private void YesBtn_Click(object sender, EventArgs e)
+        {
+            Next0.Show();
+            finalName.Text = "I'm glad I can count\non you!";
+            YesBtn.Hide();
+            NoBtn.Hide();
+            count++;
         }
     }
 }

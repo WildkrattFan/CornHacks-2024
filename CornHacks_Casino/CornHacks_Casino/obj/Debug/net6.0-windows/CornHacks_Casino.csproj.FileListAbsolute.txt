@@ -20,5 +20,4 @@ C:\Users\zoeke\source\repos\CornHacks-2024\CornHacks_Casino\CornHacks_Casino\obj
 C:\Users\zoeke\source\repos\CornHacks-2024\CornHacks_Casino\CornHacks_Casino\obj\Debug\net6.0-windows\CornHacks_Casino.DragonLair.resources
 C:\Users\zoeke\source\repos\CornHacks-2024\CornHacks_Casino\CornHacks_Casino\obj\Debug\net6.0-windows\CornHacks_Casino.EastVillage.resources
 C:\Users\zoeke\source\repos\CornHacks-2024\CornHacks_Casino\CornHacks_Casino\obj\Debug\net6.0-windows\CornHacks_Casino.GoblinHut.resources
-C:\Users\zoeke\source\repos\CornHacks-2024\CornHacks_Casino\CornHacks_Casino\obj\Debug\net6.0-windows\CornHacks_Casino.GoldYard.resources
 C:\Users\zoeke\source\repos\CornHacks-2024\CornHacks_Casino\CornHacks_Casino\obj\Debug\net6.0-windows\CornHacks_Casino.SouthMountains.resources

@@ -13,9 +13,6 @@
     <Compile Update="GoblinHut.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="GoldYard.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="SouthMountains.cs">
       <SubType>Form</SubType>
     </Compile>

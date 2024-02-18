@@ -140,6 +140,7 @@
             this.YesBtn.Text = "Yes";
             this.YesBtn.UseVisualStyleBackColor = false;
             this.YesBtn.Visible = false;
+            this.YesBtn.Click += new System.EventHandler(this.YesBtn_Click);
             // 
             // NoBtn
             // 
@@ -153,6 +154,7 @@
             this.NoBtn.Text = "No";
             this.NoBtn.UseVisualStyleBackColor = false;
             this.NoBtn.Visible = false;
+            this.NoBtn.Click += new System.EventHandler(this.NoBtn_Click);
             // 
             // panel1
             // 

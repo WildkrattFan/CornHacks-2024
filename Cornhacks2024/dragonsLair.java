@@ -80,9 +80,10 @@ public class dragonsLair {
         readyToDieMessage();
         Scanner scanner = new Scanner(System.in);
         String input = scanner.nextLine();
-        while (input.equals("yes") == false) {
-            input = scanner.nextLine(); // Fix: Remove the String type declaration
+        while (!input.equals("yes")) {
+            // Fix: Remove the String type declaration
             System.out.println("SORRY WRONG ANSWER!!! \n Lets try that again...");
+            input = scanner.nextLine();
             readyToDieMessage();
         }
         int roll = dice.rollEasyChoice(); // Fix: Change 'dice' to 'dice.rollEasyChoice()'

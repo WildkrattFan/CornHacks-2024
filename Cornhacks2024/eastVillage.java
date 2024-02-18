@@ -6,7 +6,7 @@ public class eastVillage {
 
     public static void adventure(character player, dice dice) {
         int roll = dice.rollHardChoice();
-        if (roll >= 8) {
+        if (roll >= 8) { //PROBABILITY 50/50
             System.out.println("You rolled a " + roll + ". You go on an adventure to the cave of wonders");
             caveOfWonders.crypticCrystals(player);
         } else {

@@ -17,7 +17,7 @@ public class southMountains {
             System.out.println("You rolled a " + roll);
             System.out.println("You feel a sense of adventure and wonder.");
             System.out.println("You feel as though you could take on the world.");
-            rushDownMountain(player);
+            rushDownMountain(player); 
         } else {
             System.out.println("You rolled a " + roll);
             System.out.println("You get a sudden sense of dread.");

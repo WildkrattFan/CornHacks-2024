@@ -77,6 +77,10 @@ namespace CornHacks_Casino
                     count = 31;
                 }
             }
+            if (count == 22)
+            {
+                this.Close();
+            }
             if (count == 32)
             {
                 diceNum = Random(10);

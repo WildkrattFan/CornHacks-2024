@@ -44,7 +44,7 @@ namespace CornHacks_Casino
             if (count == 4)
             {
                 diceNum = Random(10);
-                if (diceNum <= 5)
+                if (diceNum % 2 == 0)
                 {
                     dialogue.Text = "Turns out the gauntlet was counterfeit.\nYou got 10 dollars";
                 }
@@ -55,7 +55,7 @@ namespace CornHacks_Casino
             }
             if (count == 5)
             {
-                if (diceNum <= 5)
+                if (diceNum % 2 == 0)
                 {
                     dialogue.Text = "Maybe it was all for nothing...";
                 }

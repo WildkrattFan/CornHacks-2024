@@ -1,0 +1,5 @@
+C:\Users\ofadd\OneDrive\Desktop\CornHacks_Casino.exe
+C:\Users\ofadd\OneDrive\Desktop\CornHacks_Casino.dll
+C:\Users\ofadd\OneDrive\Desktop\CornHacks_Casino.deps.json
+C:\Users\ofadd\OneDrive\Desktop\CornHacks_Casino.runtimeconfig.json
+C:\Users\ofadd\OneDrive\Desktop\CornHacks_Casino.pdb

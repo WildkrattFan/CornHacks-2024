@@ -55,6 +55,10 @@ namespace CornHacks_Casino
                     dialogue.Text = "You decide the journey isn't\nworth it. Click next to close";
                 }
             }
+            if (count == 5)
+            {
+                this.Close();
+            }
             if (count == 42)
             {
                 this.Close();
@@ -107,6 +111,10 @@ namespace CornHacks_Casino
                 Wizard.Hide();
                 Speaker.Text = "Tricky";
                 dialogue.Text = "How about you journey later, and come\nwith me instead!";
+            }
+            if (count == 22)
+            {
+                this.Close();
             }
             if (count == 63)
             {

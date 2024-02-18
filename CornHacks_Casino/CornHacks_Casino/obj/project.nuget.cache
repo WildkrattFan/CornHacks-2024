@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "+Gm9vsrn7iKuyeprC4I2GteGrPf+FF5HQTQzw43IDeiP2DNkmz2YaCO0ZaFfE5ia658+Ym1sRO8rpV9KHZJhEQ==",
+  "dgSpecHash": "zN9Ec0gI+8a9Di2yU1YyS5m0WKQsFUwYHiL8tmBvDAax+Wa3ezQwe0bDh43McQSvzs4oQ62r1dZ6eHd45TfjTQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\zoeke\\source\\repos\\CornHacks-2024\\CornHacks_Casino\\CornHacks_Casino\\CornHacks_Casino.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\ofadd\\OneDrive\\Documents\\GitHub\\CornHacks-2024\\CornHacks_Casino\\CornHacks_Casino\\CornHacks_Casino.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ofadd\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.25\\microsoft.windowsdesktop.app.ref.6.0.25.nupkg.sha512",
+    "C:\\Users\\ofadd\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.25\\microsoft.netcore.app.ref.6.0.25.nupkg.sha512",
+    "C:\\Users\\ofadd\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.25\\microsoft.aspnetcore.app.ref.6.0.25.nupkg.sha512",
+    "C:\\Users\\ofadd\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.25\\microsoft.netcore.app.host.win-x64.6.0.25.nupkg.sha512"
+  ],
   "logs": []
 }
